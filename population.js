@@ -6,8 +6,8 @@ const getBlogs = () => {
 
     xhr.onload = () => {
         const blogs = xhr.response;
-        const studentGrades = blogs.filter(dam=>dam.population < 200000);
-        console.log(studentGrades);
+        const popu = blogs.filter(dam=>dam.population < 200000);
+        console.log(popu);
     };
 
     xhr.send();
