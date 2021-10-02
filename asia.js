@@ -6,8 +6,8 @@ const getBlogs = () => {
 
     xhr.onload = () => {
         const blogs = xhr.response;
-        const studentGrades = blogs.filter(dam=>dam.region === "Asia");
-        console.log(studentGrades);
+        const asiaRegion = blogs.filter(dam=>dam.region === "Asia");
+        console.log(asiaRegion);
     };
 
     xhr.send();
